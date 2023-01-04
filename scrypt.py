@@ -1,6 +1,6 @@
 import json, requests
 
-ano = "2022"
+ano = "2023"
 
 rtta = requests.get('https://nolaborables.com.ar/api/v2/feriados/'+ano)
 #print(type(rtta))
