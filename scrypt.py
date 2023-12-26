@@ -1,16 +1,10 @@
 import json, requests
 
-ano = "2023"
+ano = "2024"
 
 rtta = requests.get('https://nolaborables.com.ar/api/v2/feriados/'+ano)
-#print(type(rtta))
-
-#rtta = json.dumps(rtta).replace("\\n","</br>")
-
 no_laborables_payload = rtta.json()
 
-#print(len(no_laborables_payload))
-#print(no_laborables_payload)
 
 file_name = "feriados"+ano+".json"
 cont = 0
